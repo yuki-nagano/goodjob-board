@@ -1,0 +1,39 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE mapper 
+	PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN" 
+	"http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+<mapper namespace="com.ynagano.board.mapper.GoodjobListRepository">
+
+	<insert id="insertForm" parameterType="com.ynagano.board.bean.FormBean">
+		INSERT INTO
+			GOODJOB_LIST
+			(`send_name`, `received_name`, `content`)
+		VALUES (
+			#{sendName},
+			#{receivedName},
+			#{content}
+		)
+	</insert>
+	
+	<select id="getSentAll" parameterType="String" resultType="com.ynagano.board.domain.GoodjobListModel">
+		SELECT 
+			received_name,
+			content,
+			send_time
+		FROM GOODJOB_LIST
+		WHERE
+			send_name = #{sendName}
+	</select>
+	
+	<select id="getReceivedAll" parameterType="String" resultType="com.ynagano.board.domain.GoodjobListModel">
+		SELECT 
+			send_name,
+			content,
+			send_time
+		FROM GOODJOB_LIST
+		WHERE
+			received_name = #{receivedName}
+	</select>
+	
+</mapper>
+

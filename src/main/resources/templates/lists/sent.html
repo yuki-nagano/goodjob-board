@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Sent GOOD JOB!</title>
+    <!-- Bootstrap CSS -->
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css" integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous">
+
+    <link href='https://fonts.googleapis.com/css?family=Open Sans' rel='stylesheet' type='text/css'>
+    <link href="https://netdna.bootstrapcdn.com/font-awesome/3.0.2/css/font-awesome.css" rel="stylesheet">
+    <link rel="stylesheet" href="/lists/css/list.css">
+</head>
+
+<body>
+
+    <h1>Sent GOOD JOB!</h1>
+    <div class="container">
+        <div class="row">
+		    <table>
+		        <tr>
+		            <th>To</th>
+		            <th>Time</th>
+		            <th>Contents</th>
+		
+		        </tr>
+		        <tr th:each="listinHtml : ${goodjobListModelList}">
+		            <td th:text="${listinHtml.receivedName}" class="icon"></td>
+		            <td th:text="${listinHtml.sendTime}"></td>
+		            <td th:text="${listinHtml.content}"></td>
+		           <!--  <td><a href="#">read more</a></td> -->
+		        </tr>
+<!-- 		        <tr>
+		            <td class="icon">Amy</td>
+		            <td>2020-05-18 16:43:00</td>
+		            <td>Great Job!</td>
+		            <td><a href="#">read more</a></td>
+		        </tr> -->
+		
+		    </table>
+		</div>
+	</div>
+	<footer>
+		<a th:href="@{/}">Back to dashboard</a>
+	</footer>
+
+</body>
+</html>
+
