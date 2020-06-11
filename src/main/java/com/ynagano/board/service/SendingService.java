@@ -18,16 +18,7 @@ public class SendingService {
 	 * @param FormBean フォームの値が入ったBean
 	 */
 	 public void execute(FormBean formBean) {
-//		 GoodjobListModel goodjobListModel = new GoodjobListModel();
-//		 goodjobListModel.setSendName(formBean.());
 		 goodjobListRepository.insertForm(formBean);
-		 
-		 System.out.println();
-		 System.out.println("Sent name: " + formBean.sendName);
-		 System.out.println("Received name: " + formBean.receivedName);
-		 System.out.println("Content: " + formBean.content);
-		 
-		 
 		 
 	 }
 }
