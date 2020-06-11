@@ -52,6 +52,18 @@ hr {
 img {
     vertical-align: middle;
 }
+
+@media (min-width: 515px) {
+	.lg-disable {
+	display: none;
+}
+}
+
+
+/* FOR TEST */
+.disable h2 {
+	color: gray!important;
+}
 /* Preloader */
 
 #preloader {

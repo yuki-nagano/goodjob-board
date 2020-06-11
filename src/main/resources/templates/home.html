@@ -15,7 +15,7 @@
         <meta name="viewport" content="width=device-width">
         
         <!-- Google Web Font Embed -->
-        <link href='http://fonts.googleapis.com/css?family=Raleway:400,600,500,300,700' rel='stylesheet' type='text/css'>
+        <link href='https://fonts.googleapis.com/css?family=Raleway:400,600,500,300,700' rel='stylesheet' type='text/css'>
         
         <link rel="stylesheet" href="main/css/bootstrap.min.css">
         <!-- <link rel="stylesheet" href="css/font-awesome.min.css"> -->
@@ -23,7 +23,7 @@
         <link rel="stylesheet" href="main/css/main.css">
     </head>
     <body>
-        <a href="https://www.freepik.com/free-photos-vectors/background">Background vector created by freepik - www.freepik.com</a>
+<!--         <a href="https://www.freepik.com/free-photos-vectors/background">Background vector created by freepik - www.freepik.com</a> -->
         <div id="main-wrapper">
             <!--[if lt IE 7]>
                 <p class="chromeframe">You are using an <strong>outdated</strong> browser. Please <a href="http://browsehappy.com/">upgrade your browser</a> or <a href="http://www.google.com/chromeframe/?redirect=true">activate Google Chrome Frame</a> to improve your experience.</p>
@@ -57,7 +57,8 @@
                                     <a th:href="@{/create}" class="change-section">
                                         <div class="black-bg btn-menu">
                                             <i class="fa fa-thumbs-up"></i>
-                                            <h2>Create GOOD JOB!</h2>
+                                            <h2>Create<br class="lg-disable">
+                                            GOOD JOB!</h2>
                                         </div>
                                     </a>
                                 </div>
@@ -65,7 +66,8 @@
                                     <a th:href="@{/received}" class="change-section">
                                         <div class="black-bg btn-menu">
                                             <i class="fa fa-heart"></i>
-                                            <h2>Received GOOD JOB!</h2>
+                                            <h2>Received<br class="lg-disable">
+                                            GOOD JOB!</h2>
                                         </div>
                                     </a>
                                 </div>
@@ -73,17 +75,19 @@
                                     <a th:href="@{/sent}" class="change-section">
                                         <div class="black-bg btn-menu">
                                             <i class="fa fa-paper-plane"></i>
-                                            <h2>Sent GOOD JOB!</h2>
+                                            <h2>Sent<br class="lg-disable">
+                                            GOOD JOB!</h2>
                                         </div>
                                     </a>
                                 </div>
                                 <div class="col-xs-6 col-sm-6 col-md-6 col-lg-6 margin-bottom-20">
-                                    <a href="#contact" class="change-section">
-                                        <div class="black-bg btn-menu">
+                                    <!-- <a href="#contact" class="change-section"> -->
+                                        <div class="black-bg btn-menu disable">
                                             <i class="fa fa-users"></i>
-                                            <h2>GOOD JOB! Board</h2>
+                                            <h2>GOOD JOB!<br class="lg-disable">
+                                            Board</h2>
                                         </div>
-                                    </a>
+                                    <!-- </a> -->
                                 </div>
                             
                                 <div class="col-xs-12 col-sm-6 col-md-6 col-lg-6 margin-bottom-20">
@@ -94,11 +98,11 @@
                                     </a>
                                 </div>
                                 <div class="col-xs-12 col-sm-6 col-md-6 col-lg-6 margin-bottom-20">
-                                    <a href="#settings" class="change-section">
-                                        <div class="black-bg btn-menu">
+                                    <!-- <a href="#settings" class="change-section"> -->
+                                        <div class="black-bg btn-menu disable">
                                             <h2>Settings</h2>
                                         </div>
-                                    </a>
+                                    <!-- </a> -->
                                 </div>
                             </div>
                         </section>
