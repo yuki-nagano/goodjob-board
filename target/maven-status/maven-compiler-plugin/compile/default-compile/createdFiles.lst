@@ -7,4 +7,3 @@ com/ynagano/board/domain/GoodjobListModel.class
 com/ynagano/board/service/SendingService.class
 com/ynagano/board/bean/FormBean.class
 com/ynagano/board/mapper/GoodjobListRepository.class
-com/ynagano/board/BoardConfig.class
