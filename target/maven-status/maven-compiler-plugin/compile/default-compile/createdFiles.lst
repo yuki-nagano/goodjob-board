@@ -1,9 +1,0 @@
-com/ynagano/board/domain/UserInfoModel.class
-com/ynagano/board/BoardApplication.class
-com/ynagano/board/mapper/UserInfoRepository.class
-com/ynagano/board/service/DisplayService.class
-com/ynagano/board/controller/HomeController.class
-com/ynagano/board/domain/GoodjobListModel.class
-com/ynagano/board/service/SendingService.class
-com/ynagano/board/bean/FormBean.class
-com/ynagano/board/mapper/GoodjobListRepository.class
