@@ -15,7 +15,7 @@ public class SendingService {
 	
 	/**
 	 * 新規GOOD JOBの内容をDBに登録する
-	 * @param FormBean フォームの値が入ったBean
+	 * @param formBean フォームの値が入ったBean
 	 */
 	 public void execute(FormBean formBean) {
 		 goodjobListRepository.insertForm(formBean);

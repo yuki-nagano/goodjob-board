@@ -5,7 +5,6 @@ import java.util.List;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Controller;
 import org.springframework.ui.Model;
-import org.springframework.validation.annotation.Validated;
 import org.springframework.web.bind.annotation.ModelAttribute;
 import org.springframework.web.bind.annotation.RequestMapping;
 import org.springframework.web.bind.annotation.RequestMethod;
@@ -45,8 +44,6 @@ public class HomeController {
 	 * GOOD JOB Boardとは？
 	 * Discription Page
 	 * 
-	 * @param model
-	 * @param formBean
 	 * @return
 	 */
 	@RequestMapping(value="/about", method=RequestMethod.GET)
@@ -58,7 +55,6 @@ public class HomeController {
 	 * GOOD JOBを送る画面を表示
 	 * 
 	 * @param model
-	 * @param formBean
 	 * @return
 	 */
 	@RequestMapping(value="/create", method=RequestMethod.GET)
@@ -71,7 +67,7 @@ public class HomeController {
 	 * フォームから値を受け取りDBに格納し(Service内で実行)
 	 * 一覧にリダイレクト
 	 * 
-	 * @param FormBean リクエストデータ
+	 * @param formBean リクエストデータ
 	 * @param model Model
 	 * @return ユーザー情報一覧画面
 	 */

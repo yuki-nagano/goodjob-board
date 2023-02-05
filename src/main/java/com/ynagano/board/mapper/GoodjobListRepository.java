@@ -31,7 +31,7 @@ public interface GoodjobListRepository {
 	 * 
 	 * SELECT SENT LIST
 	 * 
-	 * @param send name 送信者
+	 * @param sendName name 送信者
 	 * @return result(s) of query
 	 */
 	List<GoodjobListModel> getSentAll(String sendName);
@@ -40,7 +40,7 @@ public interface GoodjobListRepository {
 	 * 
 	 * SELECT RECEIVED LIST
 	 * 
-	 * @param received name 受信者
+	 * @param receivedName name 受信者
 	 * @return result(s) of query
 	 */
 	List<GoodjobListModel> getReceivedAll(String receivedName);
