@@ -1,7 +1,7 @@
-# Good Job-Board
+# Good Job Board
 
 # Overview
-Good Job Board - Sending/receiving/sharing shoutout platform  
+Sending/receiving/sharing shoutout platform  
 LIVE: https://ynagano-goodjob-board.herokuapp.com/
 
 # Feature
@@ -15,8 +15,8 @@ LIVE: https://ynagano-goodjob-board.herokuapp.com/
 [Back-End]  
 Language: Java 
 Framework: Spring Boot  
-Virtual Environment: Pipenv  
-Database : MySQL   
+Dependency management: Maven  
+Database : Postgres   
 
 [Front-End]  
 Language : HTML, CSS, JavaScript (Vanilla)  
